@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    min-height: 100vh;
+
+    background: 
+  /* Top Right Purple Glow */
+  radial-gradient(circle at top right, rgba(107, 14, 184, 0.4), transparent 50%),
+  /* Center Left Subtle Reddish Glow */
+  radial-gradient(circle at bottom left, rgba(244, 5, 120, 0.15), transparent 40%),
+  /* Base Dark Color */
+  #2d0202;
+
+    overflow-x: hidden;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 20px 60px;
+}
+/* NAVBAR */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 120px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+
+    font-size: 16px;
+}
+
+.menu i{
+    color: white;
+    font-size: 28px;
+}
+/* HERO SECTION */
+
+#sec1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 30vh;
+
+    position: relative;
+}
+/* LEFT SIDE */
+
+.left{
+    display: flex;
+    flex-direction: column;
+position: absolute;
+top: -40px;
+    gap: 10px;
+}
+/* LOGO AREA */
+
+.logo-area{
+    position: relative;
+
+    width: 100px;
+}
+/* LEFT STAR */
+.img1{
+    position: absolute;
+
+    top: 10px;
+    left: -25px;
+
+    z-index: 2;
+}
+
+.img1 img{
+    width: 28px;
+    height: 28px;
+}
+/* MAIN LOGO */
+
+.img2 img{
+    width: 200px;
+}
+/* RIGHT STAR */
+
+.img3{
+    position: absolute;
+
+    right: -110px;
+    bottom: 40px;
+
+    z-index: 2;
+}
+
+.img3 img{
+    width: 32px;
+    height: 32px;
+}
+/* TEXT */
+
+.left p{
+    color: white;
+
+    font-size: 16px;
+    line-height: 28px;
+}
+/* BUTTONS */
+.btn{
+    display: flex;
+    gap: 20px;
+}
+
+.btn button{
+    padding: 14px 28px;
+
+    border-radius: 10px;
+    border: solid white 1px;
+    background-color: transparent;
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    transition: all 0.3s ease;
+}
+
+.btn button:hover{
+    background: linear-gradient(
+    to right,
+    #ff006a,
+    #ff9a00
+);
+
+    color: white;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 20px rgba(255,0,85,0.4);
+}
+/* BUTTON ICON */
+
+.btn button i{
+    font-size: 22px;
+}
+/* RIGHT IMAGE */
+
+.right{
+    position: relative;
+    top: -150px;
+    right: -800px;
+}
+
+.right img{
+
+    height: 600px;
+    width: 500px;
+}
+
+.social-icons{
+    position: absolute;
+
+    right: -40px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 22px;
+
+    z-index: 10;
+}
+
+.social-icons i{
+    color: #ff6b57;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.social-icons i:hover{
+    transform: scale(1.2);
+
+    color: white;
+}
+
+.scroll-box{
+    position: absolute;
+
+    left: -40px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.scroll-box p{
+    color: white;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    transform: rotate(-90deg);
+}
+
+.line{
+    width: 2px;
+    height: 80px;
+
+    margin-top: 30px;
+
+    background: linear-gradient(
+        to bottom,
+        #ff0080,
+        #ff7b00
+    );
+}
+
+.bg-text-left{
+    position: absolute;
+
+    left: 40px;
+    bottom: 80px;
+
+    font-size: 180px;
+    font-weight: 900;
+
+    color: rgba(255,255,255,0.05);
+
+    letter-spacing: 6px;
+
+    z-index: 0;
+}
+
+.bg-text-right{
+    position: absolute;
+
+    right: -260px;
+    top: 100px;
+
+    font-size: 140px;
+    font-weight: 600;
+
+    color: rgba(255,255,255,0.05);
+
+    letter-spacing: 6px;
+
+    transform: rotate(-90deg);
+
+    z-index: 0;
+}
+
+/* CARDS SECTION */
+
+.cards{
+    display: flex;
+    gap: 20px;
+
+    position: relative;
+
+    margin-top: -190px;
+    left: 80px;
+
+    z-index: 10;
+    height: 200px;
+    width: 1000px;
+    border-radius: 20px;
+    padding: 20px;
+    background: 
+  /* Top Right Purple Glow */
+  radial-gradient(circle at top right, rgba(107, 14, 184, 0.4), transparent 50%),
+  /* Center Left Subtle Reddish Glow */
+  radial-gradient(circle at bottom left, rgba(244, 5, 5, 0.15), transparent 40%),
+  /* Base Dark Color */
+  #2d0202;
+}
+
+.card{
+    position: relative;
+
+    width: 400px;
+    height: 150px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 2px solid rgba(255,255,255,0.1);
+
+    background-color: #1a1a1a;
+
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+}
+
+/* CARD IMAGE */
+.card img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+
+    bottom: 15px;
+    right: 15px;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    background-color: rgba(17, 17, 17, 0.936);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* PLAY ICON */
+.overlay i{
+    color: white;
+    font-size: 20px;
+}
